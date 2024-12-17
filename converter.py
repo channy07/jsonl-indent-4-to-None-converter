@@ -9,7 +9,7 @@ with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', e
     lines = ""
 
     for line in infile:
-        if(line == "}\n") :
+        if(line == "}\n" or line == "}") :
             lines += line.strip()
             outfile.write(lines + '\n') 
             lines = ""
